@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人主页</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .text1{
+            width: 100%;
+            text-align: center;
+            font-weight:bold;
+        }
+        .search{
+            max-width:200px;
+            text-align: center;
+            margin:0 auto;
+        }
+        .container {
+            max-width: 200px;
+            margin: auto;
+            background: #5fd3d916;
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(88, 169, 223, 0.773);
+        }
+        .profile-img {
+            width: 200px;
+            height: 300px;
+            display: block;
+            margin: 0 auto 20px;
+        }
+        .marquee {
+            width: 200px;
+            overflow: hidden;
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            margin:0 auto 20px;
+            text-align:center;
+        }
+        .marquee p {
+            display: inline-block;
+            padding-left: 100%;
+            animation: marquee 5s linear infinite;
+            white-space: nowrap;
+        }
+        @keyframes marquee {
+            from { transform: translateX(100%); }
+            to { transform: translateX(-100%); }
+        }
+        .bio {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 这是开头一段话 -->
+        <label for="search">
+            <div class="text1">
+                中午吃什么啊？
+            </div>
+        </label>
+        </div> 
+        <div class="search">
+            <input type="text" id="search" name="search" placeholder="输入今天想吃的">
+        </div>
+        <!-- 插入个人图片 -->
+        <img src="image\1.jpeg" alt="个人照片" class="profile-img">
+
+        <!-- 滚动字幕 -->
+        <div class="marquee">
+            <p>不想上早八🥀🥀🥀</p>
+        </div>
+
+        <!-- 个人简介 -->
+        <div class="bio">
+            <h2>物联网工程</h2>
+            <p>好困啊、好困啊</p>
+        </div>
+    </div>
+</body>
+</html>
